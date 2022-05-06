@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Medical Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styleone.css">
+   <link rel="stylesheet" href="styletwo.css">
+</head>
+<body style="background-color:grey;">
+<div style="background-color:white;text-align:center;padding:10px">
+	<h1>MEDICAL</h1>
+</div>
+<Div id="div1">											                      
+   <nav class="navbar navbar-expand-sm ">
+  
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#" class="btn btn-info" role="button" id=pagenew><b><<</b></a>
+            </li>
+            <li class="nav-item">
+                 <a href="#" class="btn btn-info" role="button" id=pagenew><b><</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="btn btn-info" role="button" id=pagenew>120/155</a>
+            </li>
+             <li class="nav-item">
+                <a href="#" class="btn btn-info disabled" role="button" id=pagenew><b>></b></a>
+            </li>
+             <li class="nav-item">
+                <a href="#" class="btn btn-info disabled" role="button" id=pagenew><b>>></b></a>
+            </li>
+        </ul>
+        <h6 id="currentDate"></h6> 
+    </nav>
+
+ </Div>
+
+													     		
+	
+<div>											     			
+<nav class="navbar navbar-expand-sm " id="secnav">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+     <a href="#" class="btn btn-info-vital" role="button" id=btn style="height:62px">VITALS TABLE</a>  
+    </li>
+    <li class="nav-item">
+     <a href="#" class="btn btn-info-graph" role="button" id=btn style="height:62px">GRAPHS</a>
+    </li>
+  </ul>
+</nav>
+</div>  														
+
+<div>															
+<nav class="navbar navbar-expand-sm" id="thirdnav" >
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="#" class="btn btn-general" role="button" id=btn>GENERAL</a>
+    </li>
+    <li class="nav-item">
+     <a href="#" class="btn btn-cardiac" role="button" id=btn>CARDIAC</a>
+    </li>
+    <li class="nav-item">
+     <a href="#" class="btn btn-respiratory" role="button" id=btn>RESPIRATORY</a>
+    </li>
+    <li class="nav-item">
+     <a href="#" class="btn btn-neuro" role="button" id=btn>NEURO</a>
+    </li>
+  </ul>
+</nav>
+</div>																			
+
+
+<div>																			
+<nav class="navbar navbar-expand-sm" id="fourthnav">
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-addbtn" role="button" id=addbtn1 data-toggle="modal" data-target="#myModalgen">+</a>
+    </li>
+</ul>
+</nav>
+</div>
+
+
+
+
+
+<div>																		
+<nav class="navbar navbar-expand-sm"  id="fifthnav">							
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-gentab" role="button" id=btn>Hourly</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="btn btn-all1" role="button" id=btn>All</a>
+    </li>
+</ul>
+</nav>
+</div>																			
+
+
+
+<div>																			
+<nav class="navbar navbar-expand-sm" id="sixthnav">
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-addbtn" role="button" id=addbtn2  data-toggle="modal" data-target="#myModalcar">+</a>
+    </li>
+</ul>
+</nav>
+</div>
+
+
+<div>																		
+<nav class="navbar navbar-expand-sm"  id="seventhnav">							
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-cardiactab" role="button" id=hourly1>Hourly</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="btn btn-info" role="button" id=all1>All</a>
+    </li>
+</ul>
+</nav>
+</div>																		
+
+<div>																			
+<nav class="navbar navbar-expand-sm" id="eightnav">
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-addbtn" role="button" id=addbtn3 data-toggle="modal" data-target="#myModalresp">+</a>
+    </li>
+</ul>
+</nav>
+</div>
+
+
+<div>																		
+<nav class="navbar navbar-expand-sm"  id="ninenav">							
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-respiratorytab" role="button" id=hourly2>Hourly</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="btn btn-info" role="button" id=all2>All</a>
+    </li>
+</ul>
+</nav>
+</div>																		
+
+
+<div>																			
+<nav class="navbar navbar-expand-sm" id="tennav">
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-addbtn" role="button" id=addbtn4 data-toggle="modal" data-target="#myModalneuro">+</a>
+    </li>
+</ul>
+</nav>
+</div>
+
+
+<div>																		
+<nav class="navbar navbar-expand-sm"  id="elevennav">							
+<ul class="navbar-nav">
+ <li class="nav-item">
+      <a href="#" class="btn btn-neurotab" role="button" id=hourly3>Hourly</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="btn btn-info" role="button" id=all3>All</a>
+    </li>
+</ul>
+</nav>
+</div>																		
+
+<nav class="tab-top-nav" style="border-top:1.5px solid lightgray;height:35px;margin-top:-10px;display:none" >
+</nav>
+<div class="tab1" style="margin-top:-10px">														
+<table style="width:100%;padding-top:-5px">
+  <tr>
+    <th style="width:30%;height:75px" >   </th>
+    <th id=th>07</th>
+    <th id=th>08</th>
+    <th id=th>09</th>
+    <th id=th>10</th>
+    <th id=th>11</th>
+    <th id=th>12</th>
+    <th id=th>13</th>
+    <th id=th>14</th>
+    <th id=th>15</th>
+    <th id=th>16</th>
+    <th id=th>17</th>
+    <th id=th>18</th>
+    <th id=th>19</th>
+  </tr>
+  
+  <tr style="border-bottom:1px solid light gray" >
+  <th style="width:30%;color:#008000">PUPILS</th>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+  </tr>
+  
+  <tr >
+  <th style="width:30%">Reaction R</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Reaction L</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Equality</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+																			
+
+
+<div class="tab2">														
+<table style="width:100%">
+  <tr>
+    <th style="width:30%;height:75px" >   </th>
+    <th id=th>07</th>
+    <th id=th>08</th>
+    <th id=th>09</th>
+    <th id=th>10</th>
+    <th id=th>11</th>
+    <th id=th>12</th>
+    <th id=th>13</th>
+    <th id=th>14</th>
+    <th id=th>15</th>
+    <th id=th>16</th>
+    <th id=th>17</th>
+    <th id=th>18</th>
+    <th id=th>19</th>
+  </tr>
+  
+  <tr style="border-bottom:1px solid light gray" >
+  <th style="width:30%;color:#cc0000">PUPILS</th>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+  </tr>
+  
+  <tr >
+  <th style="width:30%">Reaction R</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Reaction L</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Equality</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>													      						
+
+
+<div class="tab3">													
+<table style="width:100%">
+  <tr>
+    <th style="width:30%;height:75px" >   </th>
+    <th id=th>07</th>
+    <th id=th>08</th>
+    <th id=th>09</th>
+    <th id=th>10</th>
+    <th id=th>11</th>
+    <th id=th>12</th>
+    <th id=th>13</th>
+    <th id=th>14</th>
+    <th id=th>15</th>
+    <th id=th>16</th>
+    <th id=th>17</th>
+    <th id=th>18</th>
+    <th id=th>19</th>
+  </tr>
+  
+  <tr style="border-bottom:1px solid light gray" >
+  <th style="width:30%;color:#cc0000">PUPILS</th>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+  </tr>
+  
+  <tr >
+  <th style="width:30%">Reaction R</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Reaction L</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Equality</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>																			
+
+<div class="tab4">														
+<table style="width:100%">
+  <tr>
+    <th style="width:30%;height:75px" >   </th>
+    <th id=th>07</th>
+    <th id=th>08</th>
+    <th id=th>09</th>
+    <th id=th>10</th>
+    <th id=th>11</th>
+    <th id=th>12</th>
+    <th id=th>13</th>
+    <th id=th>14</th>
+    <th id=th>15</th>
+    <th id=th>16</th>
+    <th id=th>17</th>
+    <th id=th>18</th>
+    <th id=th>19</th>
+  </tr>
+  
+  <tr style="border-bottom:1px solid light gray" >
+  <th style="width:30%;color:#cc0000">PUPILS</th>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+    <td id=td1></td>
+  </tr>
+  
+  <tr >
+  <th style="width:30%">Reaction R</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Reaction L</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+    <tr >
+  <th style="width:30%">Equality</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table></div>																
+
+
+<div>                               
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalgen">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">General Vital - Bounce, Marco 31 M</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+         <form style="align-content:center " action="blank.html">
+    
+         <table align="center">
+        
+         <tr>
+         	<th style="border:none">
+         	</th>
+         	<th style="border:none"> <label for="date">Date</label>	
+         	<label for="time"style="margin-left:170px">Time</label></th>
+         </tr>
+         <tr>
+         	<th style="border:none">
+			  <label for="date">Vitals: </label> </th>
+			<td style="border:none"> <input type="text" id="currentDate2" name="Date" > <input type="text" id="Time1" name="Time"></td>
+		</tr>
+		<tr>
+			<th style="border:none"><label for="temp">Temp: </label></th>
+			<td style="border:none"> <input type="text" id=temp name="temp" >  <sup>o</sup>C </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="pulse">Pulse: </label></th>
+			<td style="border:none"> <input type="text" id=Pulse name="pulse" >  BPM </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="SBP">S BP: </label></th>
+			<td style="border:none"> <input type="text" id=SBP name="SBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="DBP">D BP: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="RR">RR: </label></th>
+			<td style="border:none"> <input type="text" id="RR" name="RR" >  BPM </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="o2sat">O<sup>2</sup>Sat: </label></th>
+			<td style="border:none"> <input type="text" id="o2sat" name="o2sat" >  % </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="fi0">FiO<sup>2</sup>: </label></th>
+			<td style="border:none"> <input type="text" id="fi0" name="fi0" >  BMP </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="PEEP">PEEP: </label></th>
+			<td style="border:none"> <input type="text" id="PEEP" name="peep" >  cmH<sub>2</sub>O </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="weight">Weight: </label></th>
+			<td style="border:none"> <input type="text" id="weight" name="weight" >  Kg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="height">Height: </label></th>
+			<td style="border:none"> <input type="text" id="height" name="height" >   </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="BMI">BMI: </label></th>
+			<td style="border:none"> <input type="text" id="BMI" name="BMI" >   </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">AVPU: </label></th>
+		<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">GCS: </label></th>
+		<td style="border:none">
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select> /15
+  		</td>
+		</tr>
+		
+		</table>
+		
+		
+        
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <table>
+        <tr>
+        <th style="border:none">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:950px;background-color:lightgray;color:black ">Cancel</button>
+          <td style="border:none">
+         <button type="submit" class="btn btn-secondary" style="background-color:lightgray;color:black " >submit</button></td>
+         </form>
+         </tr>
+         </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+<!-- modal ends -->
+</div>							<!-- dialogue box for general ends -->
+
+
+
+
+
+<div>                               <!-- dialogue box for cardiac starts -->
+<!-- modal starts -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalcar">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Cardiac Vital - Bounce, David 81 M</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+         <form style="align-content:center " action="blank.html">
+    
+         <table align="center">
+        
+         <tr>
+         	<th style="border:none">
+         	</th>
+         	<th style="border:none"> <label for="date">Date</label>	
+         	<label for="time"style="margin-left:170px">Time</label></th>
+         </tr>
+         <tr>
+         	<th style="border:none">
+			  <label for="date">Vitals: </label> </th>
+			<td style="border:none"> <input type="text" id="currentDate3" name="date" > <input type="text" id="Time2" name="time1"></td>
+		</tr>
+		<tr>
+			<th style="border:none"><label for="temp">S BP: </label></th>
+			<td style="border:none"> <input type="text" id=temp name="temp" >  <sup>o</sup>C </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="pulse">Weight: </label></th>
+			<td style="border:none"> <input type="text" id=Pulse name="pulse" >  Kg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="SBP">Height: </label></th>
+			<td style="border:none"> <input type="text" id=SBP name="SBP" >   </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="DBP">D BP: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="RR">RR: </label></th>
+			<td style="border:none"> <input type="text" id="RR" name="RR" >  BPM </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="o2sat">O<sup>2</sup>Sat: </label></th>
+			<td style="border:none"> <input type="text" id="o2sat" name="o2sat" >  % </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="fi0">FiO<sup>2</sup>: </label></th>
+			<td style="border:none"> <input type="text" id="fi0" name="fi0" >  BMP </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="PEEP">PEEP: </label></th>
+			<td style="border:none"> <input type="text" id="PEEP" name="peep" >  cmH<sub>2</sub>O </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="weight">CPP: </label></th>
+			<td style="border:none"> <input type="text" id="weight" name="weight" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="height">MAP: </label></th>
+			<td style="border:none"> <input type="text" id="height" name="height" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="BMI">BMI: </label></th>
+			<td style="border:none"> <input type="text" id="BMI" name="BMI" >   </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">AVPU: </label></th>
+		<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">GCS: </label></th>
+		<td style="border:none">
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select> /15
+  		</td>
+		</tr>
+		
+		</table>
+		
+		
+        
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <table>
+        <tr>
+        <th style="border:none">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:950px;background-color:lightgray;color:black ">Cancel</button>
+          <td style="border:none">
+         <button type="submit" class="btn btn-secondary" style="background-color:lightgray;color:black " >submit</button></td>
+         </form>
+         </tr>
+         </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+<!-- modal ends -->
+</div>							<!-- dialogue box for cardiac ends -->
+
+
+
+
+
+
+<div>                               <!-- dialogue box for Respiratory starts -->
+<!-- modal starts -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalresp">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Respiratory Vital - Bounce, David 81 M</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+         <form style="align-content:center " action="blank.html">
+    
+         <table align="center">
+        
+         <tr>
+         	<th style="border:none">
+         	</th>
+         	<th style="border:none"> <label for="date">Date</label>	
+         	<label for="time"style="margin-left:170px">Time</label></th>
+         </tr>
+         <tr>
+         	<th style="border:none">
+			  <label for="date">Vitals: </label> </th>
+			<td style="border:none"> <input type="text" id="currentDate4" name="date" > <input type="text" id="Time3" name="time"></td>
+		</tr>
+		<tr>
+			<th style="border:none"><label for="temp">Pulse: </label></th>
+			<td style="border:none"> <input type="text" id=temp name="temp" > BPM  </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="pulse">Temp: </label></th>
+			<td style="border:none"> <input type="text" id=Pulse name="pulse" > <sup>o</sup>C</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="SBP">Reaction L: </label></th>
+			<td style="border:none"> <input type="text" id=SBP name="SBP" >   </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="DBP">Reaction R: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="RR">RR: </label></th>
+			<td style="border:none"> <input type="text" id="RR" name="RR" >  BPM </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="o2sat">O<sup>2</sup>Sat: </label></th>
+			<td style="border:none"> <input type="text" id="o2sat" name="o2sat" >  % </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="fi0">FiO<sup>2</sup>: </label></th>
+			<td style="border:none"> <input type="text" id="fi0" name="fi0" >  BMP </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="PEEP">PEEP: </label></th>
+			<td style="border:none"> <input type="text" id="PEEP" name="peep" >  cmH<sub>2</sub>O </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="weight">Weight: </label></th>
+			<td style="border:none"> <input type="text" id="weight" name="weight" >  Kg </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="height">Height: </label></th>
+			<td style="border:none"> <input type="text" id="height" name="height" >   </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="BMI">BMI: </label></th>
+			<td style="border:none"> <input type="text" id="BMI" name="BMI" >   </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">AVPU: </label></th>
+		<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">GCS: </label></th>
+		<td style="border:none">
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select> /15
+  		</td>
+		</tr>
+		
+		</table>
+		
+		
+        
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <table>
+        <tr>
+        <th style="border:none">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:950px;background-color:lightgray;color:black">Cancel</button>
+          <td style="border:none">
+         <button type="submit" class="btn btn-secondary" style="background-color:lightgray;color:black " >submit</button></td>
+         </form>
+         </tr>
+         </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+<!-- modal ends -->
+</div>							
+
+
+
+
+
+<div>                               
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalneuro">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Neuro Vital - Bounce, David 81 M</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+         <form action="blank.html" style="align-content:center ">
+         <table align="center">
+         <tr>
+         	<th style="border:none">
+         	</th>
+         	<th style="border:none"> <label for="date">Date</label>	
+         	<label for="time"style="margin-left:170px">Time</label></th>
+         </tr>
+         <tr>
+         	<th style="border:none">
+			  <label for="date">Vitals: </label> </th>
+			<td style="border:none"> <input type="text" id="currentDate1" name="date" > <input type="text" id="Time4" name="Time"></td>
+		</tr>
+		<tr>
+			<th style="border:none"><label for="temp">Reaction L: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="pulse">Reaction R: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="SBP">Equality: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="size l">Size L: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mm </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="sizer">Size R: </label></th>
+			<td style="border:none"> <input type="text" id="RR" name="RR" >  mm </td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="eyes">Eyes: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="verbal">Verbal: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="Motor">Motor: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="weight">Movement Arms L: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="height">Movement Arms R: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+			<th style="border:none"><label for="movementlegs">Movement Legs L: </label></th>
+			<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="date">Strength Arms L: </label></th>
+		<td style="border:none"> 
+		 <select id="country" name="country" style="width:190px">
+ 		 <option value="au"></option>
+ 		 <option value="ca"></option>
+  		<option value="usa"></option>
+  		</select>
+  		</td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">Duration: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  min </td>
+		</tr>
+		<tr>
+		<th style="border:none"><label for="size l">CSF Drainage: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  ml </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">Map: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">ICP: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">CCP: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  mmHg </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">Cerebral O2: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  % </td>
+		</tr>
+		
+		<tr>
+		<th style="border:none"><label for="size l">cerebral Temp: </label></th>
+			<td style="border:none"> <input type="text" id="DBP" name="DBP" >  <sup>o</sup>C </td>
+		</tr>
+		
+		</table>
+		
+		
+        
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <table>
+        <tr>
+        <th style="border:none">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:950px;background-color:lightgray;color:black ">Cancel</button>
+          <td style="border:none">
+         <button type="submit" class="btn btn-secondary"  style="background-color:lightgray;color:black ">submit</button></td>
+         
+         </tr>
+         </table>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+<!-- modal ends -->
+</div>							
+
+
+
+
+<script>
+  var today=new Date();
+  var date =(today.getDay()+1)+'/'+(today.getMonth()+1) +'/'+
+  today.getFullYear();
+  document.getElementById("currentDate").innerHTML=date;
+  document.getElementById("currentDate1").value=date;
+  document.getElementById("currentDate2").value=date;
+  document.getElementById("currentDate3").value=date;
+  document.getElementById("currentDate4").value=date;
+  
+  var time = today.getHours() + ":" + today.getMinutes();
+  document.getElementById("Time1").value = time;
+  document.getElementById("Time2").value = time;
+  document.getElementById("Time3").value = time;
+  document.getElementById("Time4").value = time;
+  
+  </script>
+  
+  <script>
+  $(document).ready(function(){												
+	  $(".btn-info-vital").click(function(){ 
+		  $(".btn-info-vital").css("margin-top","-8px")
+		  $(".btn-info-vital").css("border-bottom","5px solid white")
+          $(".btn-info-vital").css("padding-bottom","58px")
+		      $("#thirdnav").slideDown("fast");
+		  $("#thirdnav").css("z-index","-1");
+	  });
+	  
+	  $(".btn-info-graph").click(function(){									
+		  $(".btn-info-graph").css("height","67px")
+		  $(".btn-info-vital").css("margin-top","0px")
+		  $(".btn-info-vital").css("padding-bottom","0px")
+		  $(".btn-info-vital").css("border-bottom","1.5px solid lightgray")
+		     $("#thirdnav").slideUp("fast");
+		     $("#thirdnav").slideUp("fast");
+		     $("#fourthnav").slideUp("fast");
+		     $("#fifthnav").slideUp("fast");
+		     $("#sixthnav").slideUp("fast");
+		     $("#seventhnav").slideUp("fast");
+		     $("#eightnav").slideUp("fast");
+		     $("#ninenav").slideUp("fast");
+		     $("#tennav").slideUp("fast");
+		     $("#elevennav").slideUp("fast");
+				 	$(".btn-cardiac").css("margin-top","0px")
+		   		    $(".btn-cardiac").css("padding-bottom","0px")
+		   		    $(".btn-respiratory").css("margin-top","0px")
+		   		    $(".btn-respiratory").css("padding-bottom","0px")
+		   		    $(".btn-neuro").css("margin-top","0px")
+		   		    $(".btn-neuro").css("padding-bottom","0px")
+		   		   	$(".btn-general").css("margin-top","0px")
+	                $(".btn-general").css("padding-bottom","0px");
+				 		   	  $(".tab1").css("display","none")
+						 	  $(".tab2").css("display","none")
+				    		  $(".tab3").css("display","none")
+				    		  $(".tab4").css("display","none");
+				 	
+		  });
+	  
+	  
+	  $(".btn-general").click(function(){ 									
+	  $(".btn-info-vital").css("border-bottom","5px solid white")
+	   $(".btn-general").css("border-bottom","5px solid white")
+	  $(".btn-cardiac").css("border-bottom","1.5px solid lightgray")
+	   $(".btn-info-vital").css("padding-bottom","58px")
+	        $(".btn-general").css("margin-top","2px")
+		    $(".btn-general").css("padding-bottom","55px")
+	 			$(".btn-cardiac").css("margin-top","7px")
+	   		    $(".btn-cardiac").css("padding-bottom","0px")
+	   		    $(".btn-respiratory").css("margin-top","7px")
+	   		    $(".btn-respiratory").css("padding-bottom","0px")
+	   		     $(".btn-neuro").css("margin-top","7px")
+	   		    $(".btn-neuro").css("padding-bottom","0px")
+	   		  
+	    $("#fourthnav").slideDown("fast");
+	    $("#fifthnav").slideDown("fast");
+	   			 $("#sixthnav").css("display","none")
+	   			 $("#seventhnav").css("display","none");
+	   			 $("#eightnav").css("display","none")
+	 	 	     $("#ninenav").css("display","none");
+	   			 $("#tennav").css("display","none")
+	   			 $("#elevennav").css("display","none"); 
+	   			  $(".tab2").css("display","none")
+	    		  $(".tab3").css("display","none")
+	    		  $(".tab4").css("display","none");
+	   			  
+	   			
+	  });
+	  
+	  
+	  $(".btn-cardiac").click(function(){	
+		  $(".btn-cardiac").css("border-bottom","5px solid white")
+		  $(".btn-info-vital").css("border-bottom","5px solid white")
+		  $(".btn-cardiac").css("margin-top","2px")
+	   		    $(".btn-general").css("margin-top","7px")
+	            $(".btn-general").css("padding-bottom","0px")
+	    	    $(".btn-respiratory").css("margin-top","7px")
+	   		    $(".btn-respiratory").css("padding-bottom","0px")
+	   		    $(".btn-neuro").css("margin-top","7px")
+	   		    $(".btn-neuro").css("padding-bottom","0px")
+	                $("#fourthnav").css("display","none")
+	                $("#fifthnav").css("display","none");
+	  	       	    $("#eightnav").css("display","none")
+	 	            $("#ninenav").css("display","none");
+	  		        $("#tennav").css("display","none")
+  			        $("#elevennav").css("display","none");
+										
+		           
+				   $(".btn-cardiac").css("padding-bottom","55px")
+	   		  $("#sixthnav").slideDown("fast");
+	          $("#seventhnav").slideDown("fast");
+		          $(".tab1").css("display","none")
+	    		  $(".tab3").css("display","none")
+	    		  $(".tab4").css("display","none");
+	  });
+	  
+	   $(".btn-respiratory").click(function(){ 	
+		   $(".btn-respiratory").css("border-bottom","5px solid white")
+		   $(".btn-info-vital").css("border-bottom","5px solid white")
+		   $(".btn-cardiac").css("border-bottom","1.5px solid lightgray")
+		   $(".btn-general").css("border-bottom","1.5px solid lightgray")
+		   $(".btn-neuro").css("border-bottom","1.5px solid lightgray")
+	       $(".btn-respiratory").css("margin-top","2px")
+		   $(".btn-respiratory").css("padding-bottom","55px")
+	 			$(".btn-cardiac").css("margin-top","7px")
+	   		    $(".btn-cardiac").css("padding-bottom","0px")
+	   		    $(".btn-neuro").css("margin-top","7px")
+	   		    $(".btn-neuro").css("padding-bottom","0px")
+	    $("#eightnav").slideDown("fast");
+	    $("#ninenav").slideDown("fast");
+	    $("#fourthnav").css("margin-top","-11px")
+	             $("#fourthnav").css("display","none")
+	   			 $("#fifthnav").css("display","none");
+	   			 $("#sixthnav").css("display","none")
+	   			 $("#seventhnav").css("display","none");
+	   		   	 $("#tennav").css("display","none")
+	   			 $("#elevennav").css("display","none");
+				   		  $(".tab2").css("display","none")
+				    	  $(".tab1").css("display","none")
+				    	  $(".tab4").css("display","none");
+	  });
+	  
+	    
+	    $(".btn-neuro").click(function(){ 										
+	    $(".btn-neuro").css("border-bottom","5px solid white")
+	    $(".btn-cardiac").css("border-bottom","1.5px solid lightgray")
+	    $(".btn-general").css("border-bottom","1.5px solid lightgray")
+	       $(".btn-neuro").css("margin-top","2px")
+		  $(".btn-neuro").css("padding-bottom","55px")
+	 			$(".btn-cardiac").css("margin-top","7px")
+	   		    $(".btn-cardiac").css("padding-bottom","0px")
+	   		    $(".btn-respiratory").css("margin-top","7px")
+	   		    $(".btn-respiratory").css("padding-bottom","0px")
+	   		    $(".btn-general").css("margin-top","7px")
+	   			 $(".btn-general").css("padding-bottom","0px")
+	    $("#tennav").slideDown("fast");
+	    $("#elevennav").slideDown("fast");
+	             $("#fourthnav").css("display","none")
+	   			 $("#fifthnav").css("display","none");
+	   			 $("#sixthnav").css("display","none")
+	   			 $("#seventhnav").css("display","none");
+	   			 $("#eightnav").css("display","none")
+	   			 $("#ninenav").css("display","none");
+			   		   	  $(".tab2").css("display","none")
+				    	  $(".tab1").css("display","none")
+				    	  $(".tab3").css("display","none");
+	   }); 
+	    
+		    $(".btn-gentab").click(function(){ 
+		    	 $(".btn-general").css("border-bottom","5px solid white")
+		    	  $(".btn-gentab").css("border-bottom","5px solid white")
+		    	  $(".tab-top-nav").slideDown("fast")
+		    	 $(".tab1").slideDown("fast")
+		    		  $(".tab2").css("display","none")
+		    		  $(".tab3").css("display","none")
+		    		  $(".tab4").css("display","none");
+		    }); 
+		    
+		    $(".btn-cardiactab").click(function(){ 	
+		    	$(".tab-top-nav").slideDown("fast")
+		    	 $(".btn-cardiactab").css("border-bottom","5px solid white")
+		    	 $(".tab2").slideDown("fast");
+			    	  $(".tab1").css("display","none")
+		    		  $(".tab3").css("display","none")
+		    		  $(".tab4").css("display","none");
+		    }); 
+		    
+		    $(".btn-respiratorytab").click(function(){ 
+		    	$(".tab-top-nav").slideDown("fast")
+		    	$(".btn-respiratory").css("border-bottom","5px solid white")
+		    	$(".btn-respiratorytab").css("border-bottom","5px solid white")
+		    	 $(".tab3").slideDown("fast");
+				      $(".tab2").css("display","none")
+			    	  $(".tab1").css("display","none")
+			    	  $(".tab4").css("display","none");
+		    }); 
+		    
+		    $(".btn-neurotab").click(function(){ 	
+		    	$(".tab-top-nav").slideDown("fast")
+		    	$(".btn-neuro").css("border-bottom","5px solid white")
+		    	$(".btn-neurotab").css("border-bottom","5px solid white")
+		    	 $(".tab4").slideDown("fast");
+				    	  $(".tab2").css("display","none")
+				    	  $(".tab1").css("display","none")
+				    	  $(".tab3").css("display","none");
+		    }); 
+		    
+		    btn-all1
+		    
+		    $(".btn-all1").click(function(){ 
+		    	$(".btn-gentab").css("border-bottom","1.5px solid lightgray")
+				  $(".tab1").css("display","none");
+		    }); 
+		    
+		    $("#all1").click(function(){ 
+		    	$(".btn-cardiactab").css("border-bottom","1.5px solid lightgray")
+				  $(".tab2").css("display","none");
+		    });
+		    $("#all2").click(function(){ 
+		    	$(".btn-respiratorytab").css("border-bottom","1.5px solid lightgray")
+				  $(".tab3").css("display","none");
+		    });
+		    $("#all3").click(function(){ 
+		    	$(".btn-neurotab").css("border-bottom","1.5px solid lightgray")
+				  $(".tab4").css("display","none");
+		    });
+		  
+	});																	
+  
+  
+
+  </script>
+</body>
+</html>

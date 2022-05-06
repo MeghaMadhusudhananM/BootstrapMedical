@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+th,td
+{
+	border:1px solid gray;
+ }
+ #th
+ {
+ border-bottom:4px solid black;
+ }
+#td1
+{
+border-right:1px solid white
+}
+
+ .tab1
+ {
+ display:none; 
+ }
+ 
+.tab2,.tab3,.tab4
+ {
+ display:none; 
+ }
+
+#secnav
+{
+	border-bottom:-10px; 
+	
+}
+#thirdnav
+{
+	margin-top:-10px;
+	position:static;
+	z-index:-1;  
+}
+#fourthnav
+{
+	position:static;
+	z-index:-1;
+	margin-top:-11px;
+	
+}
+#sixthnav,#eightnav,#tennav
+{
+	position:static;
+	z-index:-1;
+	margin-top:-11px;
+}
+
+.btn-general,.btn-cardiac,.btn-respiratory,.btn-neuro
+{
+	margin-top:10px;
+}
+
+.modal-header
+{
+	background-color:lightgray;
+	height:20px;
+	
+}
+.modal-title
+{
+	font-size:medium;  
+}
+.modal-body
+{
+	height:400px;
+	overflow:hidden;
+	
+}
+.modal-body:hover{overflow-y:auto;}
+
+.tab1
+{
+	border-top:1px solid black;
+	margin-top:-10px;
+}
+
+
+ 
